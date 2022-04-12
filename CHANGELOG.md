@@ -4,6 +4,27 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [3.3.1] - 2022-01-16
+
+You will see a lower unique visitor count after updating. This release contains a fix for the unique visitor count and anonymisation that was broken since 3.2.0. The recorded visits were still anonymous, but Ackee tracked the visit path of each visitor. Data that Ackee normally removes. Data tracked since 3.2.0 are all counted as unique, even if they were not.
+
+### Fixed
+
+- Unique visitor count and anonymisation (#304)
+
+## [3.3.0] - 2021-12-04
+
+### Added
+
+- Docker support for linux/arm64 and linux/arm/v7 (#298)
+
+## [3.2.0] - 2021-09-18
+
+### Changed
+
+- Switch to official Node.js Docker image
+- Updated dependencies, including mongoose (thanks @suda, #291)
+
 ## [3.1.1] - 2021-06-27
 
 ### Fixed
